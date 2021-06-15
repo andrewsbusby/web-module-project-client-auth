@@ -3,7 +3,7 @@ import React from 'react'
 import { Router, Route, Switch, Link } from 'react-router-dom';
 import login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
-import FriendList from './components/FriendList';
+import FriendsList from './components/FriendsList';
 
 import './App.css';
 
@@ -25,7 +25,7 @@ return (
       <Link onClick={logout}>Logout here</Link>
 </div>
   <Switch>
-    <PrivateRoute exact path="/protected" component={FriendList} />
+    <PrivateRoute exact path="/protected" component={FriendsList} />
           <Route path="/login" component={login} />
           <Route component={login} />
 </Switch>
